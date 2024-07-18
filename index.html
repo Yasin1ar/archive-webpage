@@ -1,85 +1,96 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Yasin Amirany | Web Developer</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    <meta name="description" content="Yasin Amirany's personal webpage" />
-    <meta name="author" content="Yasin Amirany" />
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&family=Indie+Flower&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body class="h-screen w-screen m-0 font-['Bangers'] ">
-    <header class="flex justify-center items-center w-full h-[15vh] bg-[#F4EEFF]">
-      <nav class="w-[80%] ">
-        <ul class="flex justify-evenly">
-          <li>
-            <a
-              href="https://github.com/Yasin1ar/"
-              class="hover:text-[#424874]"
-              >GitHub</a
-            >
-          </li>
-          <li>
-            <a href="https://t.me/Yasin1ar" class="hover:text-[#424874]"
-              >Telegram</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/YasinAmirany"
-              class="hover:text-[#424874]"
-              >X</a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto:yasin@amirany.net@address.com"
-              class="hover:text-[#424874]"
-              >yasin@amirany.net</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/yasin-amirany"
-              class="hover:text-[#424874]"
-              >Linkedin</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link href="./output.css" rel="stylesheet"> -->
+  <title>Yasin Amirany | Web Developer</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  <meta name="description" content="Yasin Amirany's personal webpage" />
+  <meta name="author" content="Yasin Amirany" />
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Indie+Flower&display=swap" rel="stylesheet" />
+  <!--  -->
 
-    <div id="main-div" class="flex justify-center items-center h-[75vh] min-w-[370px] min-h-[400px] bg-[#A6B1E1]">
-      <div id="card" class="bg-[#DCD6F7]">
-        <div id="photo"></div>
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
 
-        <div id="content">
-          <h1>Hi, I am Yasin Amirany :)</h1>
-          <p>
-            I am a passionate Web Developer with a knack for creating dynamic
-            and responsive web applications. With a strong foundation in
-            front-end technologies and a keen eye for design, I strive to
-            deliver seamless user experiences. Welcome to my personal webpage
-            where you can explore my projects and get to know more about my
-            work.
-          </p>
-          <div id="buttons">
-            <button>Aha...</button>
-            <a>Download Resume</a>
-          </div>
-        </div>
+<body class="font-['Bangers']">
+  <!-- Remember MOBILE FIRST! -->
+  <header class="h-[20vh] bg-gradient-to-r from-slate-400 to-slate-700">
+    <div class="flex justify-around"> <a href="https://amirany.net"><img src="assets/amirany.net - logo-Photoroom.png" alt="logo"
+          class="w-[10vh]"></a>
+      <a class="py-3 rounded-xl bg-[#EEEEEE]  my-auto justify-center  text-[1.5rem] items-center flex w-52" download>Download Resume</a>
+    </div>
+    <nav>
+
+      <ul class="text-center list-none bg-yellow-400 m-0 p-0 text-2xl">
+        <li class="inline-block p-3 ">
+          <a href="https://github.com/Yasin1ar/">GitHub</a>
+        </li>
+        <li class="inline-block p-3 ">
+          <a href="https://t.me/Yasin1ar">Telegram</a>
+        </li>
+        <li class="inline-block p-3 ">
+          <a href="https://twitter.com/YasinAmirany">X</a>
+        </li>
+        <li class="inline-block p-3 ">
+          <a href="mailto:yasin@amirany.net@address.com">yasin@amirany.net</a>
+        </li>
+        <li class="inline-block p-3 ">
+          <a href="https://www.linkedin.com/in/yasin-amirany">Linkedin</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <div id="main" class="bg-gradient-to-r from-slate-100 to-slate-300">
+    <div id="card" class=" mt-[5vh] mx-[2vw]">
+      <img src="assets/me.jpg" alt="Yasin" title="me :)" class="h-[25vh] my-[2vh] rounded-full mx-auto">
+
+      <div id="content" class=" text-center text-[1.5rem]">
+        <h1 class="text-[2rem] mb-[2vh]">Hi, I am <span
+            class="rock-salt-regular text-[3rem] font-bold text-red-800">Yasin Amirany</span> :)</h1>
+        <p class="border border-black p-[3vw] mb-[2vh]">
+          A 21 years old CS student who always passionate about computing and
+          learning new things. I'm a junior web developer on a mission to
+          create awesome things on the web. The web is the ultimate platform
+          for innovation and impact, and I'm excited to be part of it. I aim
+          to contribute to the future of the web.
+        </p>
+        <p class="intro-datas border border-black mb-[2vh] p-[3vw] md:hidden">
+          I'm a junior web developer on a mission to create awesome things on
+          the web. The web is the ultimate platform for innovation and impact,
+          and I'm excited to be part of it. I aim to contribute to the future
+          of the web.
+        </p>
+        <p class="intro-datas border border-black mb-[2vh] p-[3vw]  md:hidden">
+          An enthusiastic programmer who loves coding and learning new skills.
+          always curious about how things work and how to make them better. I
+          enjoy solving problems and creating solutions, thats a healthy
+          dopamine release for me :) I am not afraid of challenges and
+          failures, but see them as opportunities to grow and improve.
+        </p>
+
       </div>
     </div>
 
-    <footer class="w-full h-[10vh] bg-[#424874]"></footer>
-  </body>
+
+  </div>
+
+  </div>
+
+  <footer class="h-fit bg-gradient-to-r bg-slate-800">
+    <p class="text-slate-100 text-center p-5">
+      amirany.net All Rights are Reserved 2024 (I dunno what does it mean
+      though, just put it here like I know law lol)
+    </p>
+  </footer>
+</body>
+
 </html>
