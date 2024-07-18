@@ -705,12 +705,6 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-yellow-400 {
-  --tw-gradient-from: #facc15 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(250 204 21 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .to-red-800 {
   --tw-gradient-to: #991b1b var(--tw-gradient-to-position);
 }
@@ -725,10 +719,6 @@ video {
 
 .to-yellow-400 {
   --tw-gradient-to: #facc15 var(--tw-gradient-to-position);
-}
-
-.to-yellow-700 {
-  --tw-gradient-to: #a16207 var(--tw-gradient-to-position);
 }
 
 .bg-cover {
@@ -876,6 +866,16 @@ video {
 
 .hover\:bg-gradient-to-b:hover {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.hover\:from-yellow-400:hover {
+  --tw-gradient-from: #facc15 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(250 204 21 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.hover\:to-yellow-700:hover {
+  --tw-gradient-to: #a16207 var(--tw-gradient-to-position);
 }
 
 .hover\:text-yellow-400:hover {
