@@ -829,11 +829,6 @@ video {
   font-size: 3rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -858,9 +853,9 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-lg {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -938,82 +933,86 @@ video {
   }
 }
 
-@media (min-width: 1024px) {
-  .lg\:m-0 {
+@media (min-width: 768px) {
+  .md\:m-0 {
     margin: 0px;
   }
 
-  .lg\:mb-\[2vh\] {
+  .md\:mb-\[2vh\] {
     margin-bottom: 2vh;
   }
 
-  .lg\:mt-\[4vh\] {
+  .md\:ml-\[3vw\] {
+    margin-left: 3vw;
+  }
+
+  .md\:mt-\[4vh\] {
     margin-top: 4vh;
   }
 
-  .lg\:inline-block {
+  .md\:inline-block {
     display: inline-block;
   }
 
-  .lg\:flex {
+  .md\:flex {
     display: flex;
   }
 
-  .lg\:inline-flex {
+  .md\:inline-flex {
     display: inline-flex;
   }
 
-  .lg\:hidden {
+  .md\:hidden {
     display: none;
   }
 
-  .lg\:h-\[25vw\] {
+  .md\:h-\[25vw\] {
     height: 25vw;
   }
 
-  .lg\:w-\[25vw\] {
+  .md\:w-\[25vw\] {
     width: 25vw;
   }
 
-  .lg\:w-\[33\%\] {
+  .md\:w-\[33\%\] {
     width: 33%;
   }
 
-  .lg\:w-\[60\%\] {
+  .md\:w-\[60\%\] {
     width: 60%;
   }
 
-  .lg\:border-0 {
+  .md\:border-0 {
     border-width: 0px;
   }
 
-  .lg\:from-red-600 {
+  .md\:from-red-600 {
     --tw-gradient-from: #dc2626 var(--tw-gradient-from-position);
     --tw-gradient-to: rgb(220 38 38 / 0) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   }
 
-  .lg\:to-red-900 {
+  .md\:to-red-900 {
     --tw-gradient-to: #7f1d1d var(--tw-gradient-to-position);
   }
 
-  .lg\:p-0 {
+  .md\:p-0 {
     padding: 0px;
   }
 
-  .lg\:text-\[1\.5rem\] {
+  .md\:text-\[1\.5rem\] {
     font-size: 1.5rem;
   }
 
-  .lg\:text-\[2\.5rem\] {
+  .md\:text-\[2\.5rem\] {
     font-size: 2.5rem;
   }
 
-  .lg\:text-\[2rem\] {
+  .md\:text-\[2rem\] {
     font-size: 2rem;
   }
 
-  .lg\:text-\[6rem\] {
+  .md\:text-\[6rem\] {
     font-size: 6rem;
   }
 }
