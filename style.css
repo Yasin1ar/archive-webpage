@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -580,6 +584,10 @@ video {
 
 .mb-\[2vh\] {
   margin-bottom: 2vh;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .mr-2 {
@@ -900,13 +908,25 @@ video {
   }
 }
 
+.hover\:border-\[1vw\]:hover {
+  border-width: 1vw;
+}
+
 .hover\:border-dashed:hover {
   border-style: dashed;
+}
+
+.hover\:border-double:hover {
+  border-style: double;
 }
 
 .hover\:border-black:hover {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.hover\:bg-transparent:hover {
+  background-color: transparent;
 }
 
 .hover\:bg-\[url\(\'assets\/yasin-amirany\.jpg\'\)\]:hover {
@@ -925,6 +945,15 @@ video {
 
 .hover\:to-yellow-700:hover {
   --tw-gradient-to: #a16207 var(--tw-gradient-to-position);
+}
+
+.hover\:text-\[1\.6rem\]:hover {
+  font-size: 1.6rem;
+}
+
+.hover\:text-red-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 .hover\:text-yellow-400:hover {
@@ -1024,5 +1053,11 @@ video {
 
   .md\:text-\[6rem\] {
     font-size: 6rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .min-\[1300px\]\:inline {
+    display: inline;
   }
 }
