@@ -12,3 +12,9 @@
     font-weight: 400;
     font-style: normal;
 }
+
+@media (min-width: 770px) and (max-width:1320px) {
+    #my-photo {
+        display: none;
+    }
+}
