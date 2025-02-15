@@ -2,7 +2,7 @@
 :root {
   /* Light mode colors */
   --header-background: #707070;
-  --banner-background: #a80006;
+  --banner-background: #a80006d5;
   --main-background: #505050;
   --second-background: #0e0e0e;
   --card-background: #707070;
@@ -15,7 +15,7 @@
   --button-secondary-text: var(--banner-background);
 
   /* font */
-  --font-family-1: cursive;
+  --font-family-1: cursive, Verdana,'Arial', sans-serif;
 
   /* Sizes and spacings */
   --border-size: 0.5rem;
@@ -39,6 +39,8 @@
   -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
   transition: width 1s ease-in-out, left 1.5s ease-in-out;
 }
+
+
 
 /* Reset and base styles */
 * {
@@ -86,6 +88,7 @@ header {
 
 #net {
   color: rgb(104, 0, 0);
+  font-family:inherit ;
 }
 
 .header-content {
@@ -109,11 +112,12 @@ header {
 }
 
 .header-list li a {
-  text-decoration: none;
-  color: var(--text);
   font-size: 1rem;
+  
   transition: color 0.3s ease;
 }
+
+
 
 
 /* Hamburger bar */
@@ -210,7 +214,7 @@ main {
 
 .button-outline {
   background: var(--button-secondary);
-  border: 0.5rem solid var(--banner-background);
+  border: 0.5rem solid #a800066c;
   color: var(--button-secondary-text);
 }
 
@@ -222,13 +226,13 @@ main {
 
 /* Footer */
 footer {
-  border-top: var(--border-size) solid  var(--banner-background);
+  border-top: var(--border-size) solid  #a8000665;
   background-color: var(--footer-background);
   height: auto;
 }
 
 .footer-content {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   text-align: center;
   color: var(--header-background);
   font-size: 1rem;
