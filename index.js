@@ -7,7 +7,7 @@ async function fetchIntroductionContent() {
    * @throws {Error} When the HTTP response is not OK
    */
   try {
-    const response = await fetch("introduction"); // Assuming 'introduction' is served as a static file
+    const response = await fetch("introduction.txt"); // Assuming 'introduction' is served as a static file
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
