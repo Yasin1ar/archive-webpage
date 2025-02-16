@@ -23,7 +23,7 @@
         :root {
             --bg-gradient: linear-gradient(to right, #8b0202 0%, #707070 100%);
             --text-color: #e9e9e9e1;
-            --accent-color: #000000;
+            --accent-color: #131313;
             --card-bg: rgba(255, 255, 255, 0.1);
         }
 
@@ -56,7 +56,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 1rem 0;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
         
         .logo {
@@ -69,7 +69,11 @@
             list-style-type: none;
             gap: 2.5rem;
             /* border-bottom: 0.2rem solid #000000; */
+            border: 0.2rem solid #131313;
+            border-style: dotted;
+            padding: 1rem;
         }
+        
         
         nav a {
             color: var(--text-color);
@@ -86,7 +90,6 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            /* margin-bottom: fit; */
         }
         
         .profile-image {
@@ -139,10 +142,10 @@
         
         .cta-button:hover {
             background-color: #ED1C24;
-            color: #000;
+            color: #131313;
         }
         
-        .skills {
+        /* .skills {
             display: grid;
             grid-template-columns: 1fr;
             gap: 1.5rem;
@@ -160,14 +163,14 @@
             font-size: 1.25rem;
             margin-bottom: 0.5rem;
             color: var(--accent-color);
-        }
+        } */
 
         footer {
             margin-top: auto; /* Push footer to bottom */
             text-align: center;
             padding: 1rem 0;
             background-color: rgba(0, 0, 0, 0.4);
-            border-top: 0.2rem solid #000000;
+            border-top: 0.2rem solid #131313;
         }
         
         .social-links {
@@ -221,6 +224,7 @@
                 gap: 1rem;
                 flex-direction: row;
                 align-items: center;
+                border: none;
             }
 
             .hero-content {
@@ -244,9 +248,9 @@
                 background-attachment: fixed;
             }
             footer {
-                background: #303030;
+                background: #4b4b4b;
                 width: 100vw;
-                border-top: 0.2rem solid #000000;
+                border-top: 0.2rem solid #131313;
             }
 
         }
@@ -278,10 +282,10 @@
             <section class="hero" id="about">
                 <img src="assets/me-linkedin.png" alt="Yasin Amirany's photo" class="profile-image">
                 <div class="hero-content">
-                    <h1>Back-End Developer</h1>
-                    <p class="subtitle">concerned with functionality and performance</p>
+                    <h1><span style="color: red; font-size: 3rem;">{</span>Back-End<span style="color: red;font-size: 3rem;">}</span> Developer</h1>
+                    <p class="subtitle">// concerned with functionality and performance</p>
                     <p id="ptext">I'm <span id="me">Yasin Amirany</span>.
-                        a CS student and passionate back-end web developer.
+                        A CS student and passionate back-end web developer.
                         I'm driven to build innovative web solutions and contribute to the future of
                         the internet. I enjoy coding,
                         problem-solving, and embracing challenges to grow as a developer.</p>
@@ -291,10 +295,9 @@
         </main>
     </div>
     <footer>
-        <p><span style="color: rgb(0, 0, 0); font-size: xx-large;">amirany</span><span style="color: red;">.net</span></p>
+        <p><span style="color: #131313; font-size: xx-large;">amirany</span><span style="color: red;">.net</span></p>
         <p>&copy; 2025 </p>
     </footer>
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
 </body>
 </html>
 
