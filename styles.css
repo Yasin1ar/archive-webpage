@@ -73,7 +73,8 @@ html {
 
 body {
     font-family: "Bangers", Arial, sans-serif;
-    background: var(--bg-gradient);
+    /* background: var(--bg-gradient); */
+    background-color: #4b4b4b;
     color: var(--text-color);
     line-height: 1.6;
     display: flex;
