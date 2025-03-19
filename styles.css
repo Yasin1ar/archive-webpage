@@ -1,19 +1,53 @@
+/* ==========================================================================
+   CSS Variables
+   ========================================================================== */
 :root {
+    /* Colors */
     --bg-gradient: linear-gradient(to right, #8b0202 0%, #707070 100%);
     --text-color: #e9e9e9e1;
     --accent-color: #131313;
     --card-bg: rgba(255, 255, 255, 0.1);
+    --red-accent: #ed1c24;
+    --footer-bg: rgba(0, 0, 0, 0.4);
+    --footer-mobile-bg: #4b4b4b;
+    --black: #000000;
+    --selection-bg: #8b0202;
+    --selection-text: #131313;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 2.5rem;
+
+    /* Borders */
+    --border-width: 0.2rem;
+    --border-radius: 0.25rem;
+
+    /* Font sizes */
+    --font-size-sm: 1rem;
+    --font-size-md: 1.2rem;
+    --font-size-lg: 1.5rem;
+    --font-size-xl: 2.5rem;
+    --font-size-xxl: 3rem;
+
+    /* Container widths */
+    --container-max-width: 1200px;
+    --hero-content-width: 600px;
 }
 
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
 ::-moz-selection {
-    /* Code for Firefox */
-    color: #131313;
-    background: #8b0202;
+    color: var(--selection-text);
+    background: var(--selection-bg);
 }
 
 ::selection {
-    color: #131313;
-    background: #8b0202;
+    color: var(--selection-text);
+    background: var(--selection-bg);
 }
 
 @font-face {
@@ -38,27 +72,31 @@ html {
 }
 
 body {
-    font-family: "Bangers", Arial, sans-serif, sans-serif;
+    font-family: "Bangers", Arial, sans-serif;
     background: var(--bg-gradient);
     color: var(--text-color);
     line-height: 1.6;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: var(--container-max-width);
     margin: 0 auto;
-    padding: 1rem;
+    padding: var(--spacing-sm);
     flex-grow: 1;
 }
 
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
-    margin-bottom: 1rem;
+    padding: var(--spacing-sm) 0;
+    margin-bottom: var(--spacing-sm);
 }
 
 .logo {
@@ -69,11 +107,9 @@ header {
 nav ul {
     display: flex;
     list-style-type: none;
-    gap: 2.5rem;
-    /* border-bottom: 0.2rem solid #000000; */
-    border: 0.2rem solid #131313;
-    border-style: dotted;
-    padding: 1rem;
+    gap: var(--spacing-xl);
+    border: var(--border-width) dotted var(--accent-color);
+    padding: var(--spacing-sm);
 }
 
 nav a {
@@ -82,10 +118,15 @@ nav a {
     transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: red;
+nav a:hover,
+nav a:focus {
+    color: var(--red-accent);
+    outline: none;
 }
 
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
 .hero {
     display: flex;
     flex-direction: column;
@@ -98,36 +139,47 @@ nav a:hover {
     height: 15rem;
     border-radius: 50%;
     object-fit: contain;
-    border: 0.2rem solid var(--accent-color);
-    margin-bottom: 1.5rem;
+    border: var(--border-width) solid var(--accent-color);
+    margin-bottom: var(--spacing-md);
     background-color: #707070;
+    ;
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-xs);
 }
 
 .subtitle {
-    font-size: 1.2rem;
+    font-size: var(--font-size-md);
     color: var(--accent-color);
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-sm);
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: var(--hero-content-width);
 }
 
 #ptext {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
+    font-size: var(--font-size-md);
 }
 
 #me {
-    font-family: "Bangers", Arial, sans-serif, sans-serif;
-    font-size: x-large;
-    background-color: #ed1c24;
-    color: #000000;
+    font-family: "Bangers", Arial, sans-serif;
+    font-size: var(--font-size-lg);
+    background-color: var(--red-accent);
+    color: var(--black);
+}
+
+.red {
+    color: var(--red-accent);
+    font-size: var(--font-size-xxl);
+}
+
+.code-text {
+    color: var(--accent-color);
+    font-size: var(--font-size-lg);
 }
 
 .cta-button {
@@ -135,69 +187,61 @@ h1 {
     background-color: var(--accent-color);
     color: #707070;
     padding: 0.75rem 1.5rem;
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius);
     text-decoration: none;
-    transition: background-color 0.3s ease;
-    margin-top: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: var(--spacing-sm);
 }
 
-.cta-button:hover {
-    background-color: #ed1c24;
-    color: #131313;
-}
-
-/* .skills {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-    }
-    
-    .skill-card {
-        background-color: var(--card-bg);
-        padding: 1.5rem;
-        border-radius: 0.5rem;
-        backdrop-filter: blur(10px);
-        }
-        
-.skill-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+.cta-button:hover,
+.cta-button:focus {
+    background-color: var(--red-accent);
     color: var(--accent-color);
-    } */
+    outline: none;
+}
 
+/* ==========================================================================
+   Footer
+   ========================================================================== */
 footer {
     margin-top: auto;
-    /* Push footer to bottom */
     text-align: center;
-    padding: 1rem 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-top: 0.2rem solid #131313;
+    padding: var(--spacing-sm) 0;
+    background-color: var(--footer-bg);
+    border-top: var(--border-width) solid var(--accent-color);
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
 }
 
 .social-links a {
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: var(--font-size-lg);
     transition: color 0.3s ease;
 }
 
-.social-links a:hover {
-    color: var(--accent-color);
+.social-links a:hover,
+.social-links a:focus {
+    color: var(--red-accent);
+    outline: none;
 }
 
+/* ==========================================================================
+   Media Queries - Mobile First Approach
+   ========================================================================== */
+/* Base styles are for mobile, then we enhance for larger screens */
+
+/* Tablet and larger */
 @media (min-width: 768px) {
     .hero {
         flex-direction: row;
         text-align: left;
         justify-content: center;
-        gap: 2rem;
+        gap: var(--spacing-lg);
     }
 
     .profile-image {
@@ -207,12 +251,9 @@ footer {
     .skills {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    body {
-        height: 100vh;
-    }
 }
 
+/* Mobile specific overrides */
 @media (max-width: 767px) {
     header {
         flex-direction: column;
@@ -220,11 +261,11 @@ footer {
     }
 
     nav {
-        margin-top: 1rem;
+        margin-top: var(--spacing-sm);
     }
 
     nav ul {
-        gap: 1rem;
+        gap: var(--spacing-sm);
         flex-direction: row;
         align-items: center;
         border: none;
@@ -234,6 +275,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 90%;
     }
 
     .profile-image {
@@ -241,20 +283,13 @@ footer {
         height: 10rem;
     }
 
-    .hero-content {
-        max-width: 90%;
-    }
-
     body {
-        min-height: 100vh;
-
-        background: var(--bg-gradient);
         background-attachment: fixed;
     }
 
     footer {
-        background: #4b4b4b;
-        width: 100vw;
-        border-top: 0.2rem solid #131313;
+        background: var(--footer-mobile-bg);
+        width: 100%;
+        border-top: var(--border-width) solid var(--accent-color);
     }
 }
