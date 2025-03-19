@@ -285,8 +285,12 @@ footer {
     }
 
     body {
-        background-color: #707070;
+        background: #3a3a3a;
         background-attachment: fixed;
+    }
+
+    nav a {
+        color: #ebd9d9;
     }
 
     footer {
