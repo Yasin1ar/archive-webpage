@@ -1,14 +1,14 @@
 /* ==========================================================================
    CSS Variables
    ========================================================================== */
-   :root {
+:root {
     /* Colors */
-    --bg-gradient: linear-gradient(to right, #332a2a 0%, #707070 100%);
+    --bg-gradient: linear-gradient(to right, #302e2e 0%, #776a6a 100%);
     --text-color: #e9e9e9e1;
     --accent-color: #131313;
     --card-bg: rgba(255, 255, 255, 0.1);
     --red-accent: #ed1c24;
-    --footer-bg: rgba(0, 0, 0, 0.4);
+    --footer-bg: rgba(0, 0, 0, 0.4);    
     --footer-mobile-bg: #4b4b4b;
     --black: #000000;
     --selection-bg: #8b0202;
@@ -73,9 +73,7 @@ html {
 
 body {
     font-family: "Bangers", Arial, sans-serif;
-    /* background: var(--bg-gradient); */
-    /* background-color: #4b4b4b; */
-    background: #3a3a3a;
+    background: var(--bg-gradient);
     color: var(--text-color);
     line-height: 1.6;
     display: flex;
