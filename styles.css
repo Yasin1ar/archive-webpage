@@ -38,7 +38,11 @@ html {
 }
 
 body {
+<<<<<<< HEAD
     font-family: "Bangers", Arial, sans-serif, sans-serif;
+=======
+    font-family: "Bangers", Arial, sans-serif;
+>>>>>>> parent of 71c48ad (test background on mobile)
     background: var(--bg-gradient);
     color: var(--text-color);
     line-height: 1.6;
