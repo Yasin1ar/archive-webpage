@@ -99,9 +99,9 @@ body {
    ========================================================================== */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: var(--spacing-sm) 0;
+    padding: var(--spacing-sm);
     margin-bottom: var(--spacing-sm);
     width: 100%; /* Ensure header takes full width */
 }
@@ -302,7 +302,7 @@ footer {
     }
 
     body {
-        background: #3a3a3a;
+        background: #4b4b4b;
         background-attachment: fixed;
     }
 
