@@ -1,7 +1,8 @@
+
 /* ==========================================================================
    CSS Variables
    ========================================================================== */
-:root {
+   :root {
     /* Colors */
     --bg-gradient: linear-gradient(to right, #302e2e 0%, #776a6a 100%);
     --text-color: #e9e9e9e1;
@@ -69,6 +70,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    width: 100%;
 }
 
 body {
@@ -79,11 +82,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    min-width: 100vw;
+    width: 100%; /* Changed from min-width: 100vw to width: 100% */
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .container {
     max-width: var(--container-max-width);
+    width: 100%; /* Ensure container takes full width up to max-width */
     margin: 0 auto;
     padding: var(--spacing-sm);
     flex-grow: 1;
@@ -98,6 +103,7 @@ header {
     align-items: center;
     padding: var(--spacing-sm) 0;
     margin-bottom: var(--spacing-sm);
+    width: 100%; /* Ensure header takes full width */
 }
 
 .logo {
@@ -111,6 +117,7 @@ nav ul {
     gap: var(--spacing-xl);
     border: var(--border-width) dotted var(--accent-color);
     padding: var(--spacing-sm);
+    flex-wrap: wrap; /* Allow nav items to wrap on small screens */
 }
 
 nav a {
@@ -133,6 +140,7 @@ nav a:focus {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%; /* Ensure hero takes full width */
 }
 
 .profile-image {
@@ -143,27 +151,30 @@ nav a:focus {
     border: var(--border-width) solid var(--accent-color);
     margin-bottom: var(--spacing-md);
     background-color: #707070;
-    ;
 }
 
 h1 {
     font-size: var(--font-size-xl);
     margin-bottom: var(--spacing-xs);
+    word-wrap: break-word; /* Ensure long text wraps */
 }
 
 .subtitle {
     font-size: var(--font-size-md);
-    color: var(--accent-color);
+    color: rgb(29, 29, 29);
     margin-bottom: var(--spacing-sm);
+    word-wrap: break-word; /* Ensure long text wraps */
 }
 
 .hero-content {
     max-width: var(--hero-content-width);
+    width: 100%; /* Ensure content takes full width up to max-width */
 }
 
 #ptext {
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--font-size-md);
+    word-wrap: break-word; /* Ensure long text wraps */
 }
 
 #me {
@@ -210,6 +221,7 @@ footer {
     padding: var(--spacing-sm) 0;
     background-color: var(--footer-bg);
     border-top: var(--border-width) solid var(--accent-color);
+    width: 100%; /* Ensure footer takes full width */
 }
 
 .social-links {
@@ -217,6 +229,7 @@ footer {
     justify-content: center;
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-sm);
+    flex-wrap: wrap; /* Allow social links to wrap on small screens */
 }
 
 .social-links a {
@@ -263,6 +276,7 @@ footer {
 
     nav {
         margin-top: var(--spacing-sm);
+        width: 100%; /* Ensure nav takes full width */
     }
 
     nav ul {
@@ -270,13 +284,16 @@ footer {
         flex-direction: row;
         align-items: center;
         border: none;
+        justify-content: center; /* Center nav items */
+        padding: var(--spacing-xs); /* Reduce padding */
     }
 
     .hero-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 90%;
+        max-width: 100%; /* Changed from 90% to ensure it doesn't overflow */
+        padding: 0 var(--spacing-sm); /* Add horizontal padding */
     }
 
     .profile-image {
@@ -297,5 +314,14 @@ footer {
         background: var(--footer-mobile-bg);
         width: 100%;
         border-top: var(--border-width) solid var(--accent-color);
+    }
+    
+    /* Adjust font sizes for mobile */
+    h1 {
+        font-size: calc(var(--font-size-xl) * 0.9);
+    }
+    
+    .red {
+        font-size: calc(var(--font-size-xxl) * 0.9);
     }
 }
