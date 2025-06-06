@@ -1,5 +1,6 @@
-# [amirany.net](https://amirany.net)
-## My personal webpage 
-This is a simple webpage built with HTML and CSS. It is designed to introduce me while providing useful links and a downloadable resume
-basically this webpage represents me(kinda, I'm much cooler than you think).
-I hosted it free on Github Pages, which is awesome! check it out, you can simply have such a webpage for free.
+# Archive repo for the evolution of my web page 'amirany.net'
+
+## It's cool to keep track of things, especially things that progress over time and means to you. so here I keep track of 'amirany.net'. 
+### Unfortunatly for me, I do not have the first two version of the blog. It might not be very common to lose a project source code at this age of backup and project manager tools, yet I could manage to lose it! good job Yasin.
+
+v1 till v3, amirany.net is just a web page, no bloging functionality.
